@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Blockbuster</title>
+    <!--- boxicon cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--- Customer css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <!--- Side Bar Section Start -->
+    <div class="sideBar">
+        <i class='bx bx-x' id="closeBtn"></i>
+
+        <div class="logo">
+            <img src="./images/footlogo.webp" alt="">
+            <p>BLOCKBUSTER</p>
+        </div>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+
+        <div class="order">
+            <a href="#">Order Online</a>
+        </div>
+
+        <span class="phone">+10 237 34567</span>
+        <span class="address">BB/A, Green Lane, Monaka <br> CA 92032</span>
+
+        <div class="follow">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-linkedin' ></i>
+        </div>
+    </div>
+
+    <!--- Main Section Start -->
+    <div class="main">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./images/iconicshots.mp4" type="video/mp4">
+        </video>
+        <i class='bx bx-menu' id="menuBtn"></i>
+
+        <div class="info">
+            <h1>Enter<br> <span>BLOCKBUSTER</span></h1>
+            <h2>Kickstart Your Movie Delights</h2>
+            <p>Blockbuster helps you to discover and rediscover motion pictures around the world!</p>
+
+            <a id = "button-sector" href="#">Browse The Catalog</a>
+        </div>
+    </div>
+
+    <!--- About Section Start -->
+    <section class="about">
+        <div class="about-row">
+            <div class="about-col-one">
+                <h2>From the latest Hollywood blockbusters to classic films and hidden indie gems,<br>we have something for everyone.</h2>
+                <p>Browse our extensive selection and find the perfect movie for your Friday night, movie marathon, or cozy night in.</p>
+            </div>
+            <div class="about-col-two">
+                <div class="row">
+                    <div class="col-1">
+                        <h4>30,000+ Titles</h4>
+
+                    </div>
+                    <div class="col-1">
+                        <h4>100+ Genres</h4>
+
+                    </div>
+                    <div class="col-1">
+                        <h4>130+ Countries</h4>
+
+    
+                </div>
+                <img src="./images/about-shape.png.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--- full image Section Start -->
+    <div class="full-image">
+        <img src="./images/wideposter-cropped.jpg" alt="">
+    </div>
+
+    <!--- menu Section Start -->
+    <div class="menu" id="menu-sector">
+
+        <h1>Our Catalog</h1>
+        <p>Don't settle for less. Get your movie night started at Blockbuster!</p>
+
+        <div class="menu-row">
+            <div class="menu-col">
+                <h5>Languages</h5>
+                <p>English</p>
+                <span>Classics and latest blockbusters</span>
+                <p>Korean</p>
+                <span>Home of edge-of-seat thrillers</span>
+                <p>Indian</p>
+                <span>Discover and embrace diversity</span>
+                <p>And many more...</p>
+                <span>Click here for more</span>
+            </div>
+            <div class="menu-col">
+                <h5>Genres</h5>
+                <p>Romance</p>
+                <span>Get ready to welcome the butterflies</span>
+                <p>Thriller</p>
+                <span>Fasten your seat-belts</span>
+                <p>Drama</p>
+                <span>Embrace the life</span>
+                <p>And many more...</p>
+                <span>Click here for more</span>
+            </div>
+
+            <div class="menu-col">
+                <h5>Filmmakers</h5>
+                <p>Stanely Kubrick</p>
+                <span>Barry Lyndon, Dr.StrangeLove, The Shining...</span>
+                <p>Andrei Tarkovskey</p>
+                <span>Mirror, Stalker, Solaris...</span>
+                <p>Christopher Nolan</p>
+                <span>Oppenheimer, Memento, The Dark Knight...</span>
+                <p>And many more...</p>
+                <span>Click here for more</span>
+            </div>
+        </div>
+    </div>
+
+    <!--- service section start -->
+    <div class="service">
+        <div class="service-row">
+            <div class="service-col">
+                <img src="./images/awards.svg" alt="">
+                <p>Award Winning Films</p>
+            </div>
+            <div class="service-col">
+                <img src="./images/fans.svg" alt="">
+                <p>Fan favorites and cult followings</p>
+            </div>
+            <div class="service-col">
+                <img src="./images/new.svg" alt="">
+                <p>Latest outings of the year</p>
+            </div>
+            <div class="service-col">
+                <img src="./images/tickets.svg" alt="">
+                <p>Biggest money spinners at Box Office</p>
+            </div>
+        </div>
+    </div>
+
+    <!--- gallery section start -->
+    <section class="gallery">
+        <div class="gallery-row">
+            <div class="image">
+                <img src="./images/awardmovie.jpg" alt="">
+                <img src="./images/cultmovie.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/newmovie.jpg" alt="">
+                <img src="./images/boxoffice.avif" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- customer section start --> 
+    <section class="custom">
+        <h1>Love from Customers</h1>
+        <p>In a world dominated by streaming services, Blockbuster offers a unique and irreplaceable experience. It's not just about renting movies; it's about the community, the expert advice, and the nostalgic feeling of browsing aisles filled with cinematic possibilities.</p>
+        <div class="user">
+            <img src="./images/founder-img.png.webp" alt="">
+            <div class="detals">
+                <h6>Poppa Cherry</h6>
+                <span>Designer at Colorlib</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="custome-row">
+        <div class="image">
+            <img src="./images/shop1.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="./images/shop2.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="./images/shop4.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="./images/shop3_.webp" alt="">
+        </div>
+    </div>
+
+    <!--- footer section start -->
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h6>Contact Us</h6>
+                <p>+10 234 56789</p>
+                <p>BB/A, Green Lane, Monaka CA 92032</p>
+
+                <div class="social">
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-instagram"></i>
+                    <i class="bx bxl-linkedin"></i>
+                </div>
+            </div>
+            <div class="footer-col-centre">
+                <img src="./images/footlogo.webp" alt="">
+                <p>BLOCKBUSTER</p>
+            </div>
+            <div class="footer-col">
+                <h6>Navigation</h6>
+                <a href="#">About Us</a>
+                <a href="#">Menu</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </section>
+    <div class="footer-bottom">
+        Copyright &copy; 2023 All Right Reserved By <span>anonlegio</span>
+    </div>
+
+
+    <!--- Customer Js file -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
