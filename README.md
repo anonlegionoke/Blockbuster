@@ -1,5 +1,5 @@
 # Blockbuster | The Movie Store
-Front-end for the Blockbuster Movie Store website if they were still around.
+Front-end for the Blockbuster Movie Store website if they were still around today.
 
 # Screenshots
 ![Screenshot from 2023-12-09 10-45-35](https://github.com/anonlegionoke/Blockbuster/assets/127176580/d3e75b23-3850-4244-8a44-f090f274135d)
