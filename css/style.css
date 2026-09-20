@@ -131,6 +131,7 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    transform: scale(1.35);
 }
 .main .info{
     padding: 0 14%;
@@ -377,6 +378,9 @@ section{
 @media(max-width:550px){
     .menu-row .menu-col{
         flex-basis: 100%;
+        text-align: center;
+    }
+    .menu-row .menu-col h5 {
         text-align: center;
     }
 }
