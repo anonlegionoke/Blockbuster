@@ -21,4 +21,6 @@ $(document).ready(function(){
       });
     });
   });
-  
+
+/* Set current year */
+document.getElementById('current-year').textContent = new Date().getFullYear();

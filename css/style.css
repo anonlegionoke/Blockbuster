@@ -13,6 +13,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 :root {
     --main-color:#da0000;
     --header-color:#202738;
@@ -115,12 +119,17 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 .back-video{
     position: absolute;
-    right: 0%;
-    bottom: 0%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: -1;
 }
 .main .info{
@@ -285,6 +294,7 @@ section{
     box-shadow: inset 0px -10px 15px rgba(0, 0, 0, 0.972) ;   
     width: 100%;
     height: 50vh;
+    object-fit: cover;
 }
 
 /*=== menu section start ====*/
@@ -350,6 +360,18 @@ section{
     .menu .menu-row{
         gap: 1rem;
     }
+    section {
+        padding: 2rem 5%;
+    }
+    .menu {
+        padding: 0 5%;
+    }
+    .main .info {
+        padding: 0 5%;
+    }
+    .service {
+        padding: 2rem 5%;
+    }
 }
 
 @media(max-width:550px){
@@ -404,6 +426,12 @@ section{
 
     .gallery-row .image {
         flex-wrap: wrap;
+    }
+
+    .gallery-row .image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .service{
@@ -473,12 +501,14 @@ section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    height:30vh;
+    height: auto;
 }
 
 .custome-row .image img{
    width: 100%;
    height: 30vh;
+   object-fit: cover;
+   display: block;
 }
 
 /*=== footer section start ===*/
@@ -506,7 +536,8 @@ section{
 }
 
 .footer-row .footer-col-centre img{
-    padding-left: 40%;
+    display: block;
+    margin: 0 auto;
 }
 
 .footer-row .footer-col-centre p{
@@ -555,10 +586,16 @@ section{
     .footer .footer-row{
         grid-template-columns: 1fr 1fr;
     }
+    .custome-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media(max-width:550px) {
     .footer .footer-row{
+        grid-template-columns: 1fr;
+    }
+    .custome-row{
         grid-template-columns: 1fr;
     }
 }
